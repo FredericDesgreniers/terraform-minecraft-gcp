@@ -1,0 +1,18 @@
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+zone       = "us-central1-a"
+
+# Instance configuration
+instance_name = "minecraft-server"
+machine_type  = "e2-medium"  # 2 vCPUs, 4GB RAM - good for small servers
+# machine_type = "e2-standard-4"  # 4 vCPUs, 16GB RAM - for larger servers
+
+disk_size = 20  # GB
+
+# Server configuration
+server_type = "paper"  # Options: vanilla, paper, spigot
+minecraft_version = "1.21.7"  # Minecraft version
+memory_allocation = "3G"  # Allocate 3GB RAM to Minecraft
+
+# Networking
+use_static_ip = true  # Recommended for consistent server address
